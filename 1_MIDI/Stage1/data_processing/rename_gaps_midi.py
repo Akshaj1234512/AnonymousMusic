@@ -1,8 +1,8 @@
 import os
 from pathlib import Path
 
-audio_dir = Path("/data/akshaj/MusicAI/gaps_v1/audio")
-midi_dir = Path("/data/akshaj/MusicAI/gaps_v1/midi")
+audio_dir = Path("")
+midi_dir = Path("")
 
 audio_files = sorted(audio_dir.glob("*.wav"))
 

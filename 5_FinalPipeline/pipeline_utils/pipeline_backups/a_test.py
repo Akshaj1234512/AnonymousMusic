@@ -54,7 +54,7 @@ def run_tab_generation(midi_path: str, bpm):
     CAPO = 0
     TUNING = STANDARD_TUNING  
     
-    checkpoint_path = "/data/andreaguz/fret_t5/checkpoints_conditioning_scratch_retrain/checkpoint-642982"
+    checkpoint_path = ""
 
     if not os.path.exists(checkpoint_path):
         print(f"\nERROR: Checkpoint not found at {checkpoint_path}")
@@ -63,7 +63,7 @@ def run_tab_generation(midi_path: str, bpm):
 
     # Load model and tokenizer
     print("\nLoading model and tokenizer...")
-    tokenizer = MidiTabTokenizerV3.load("/data/andreaguz/fret_t5_clean/fret_t5/universal_tokenizer")
+    tokenizer = MidiTabTokenizerV3.load("")
     tokenizer.ensure_conditioning_tokens(
         capo_values=tuple(range(8)),
         tuning_options=DEFAULT_CONDITIONING_TUNINGS
@@ -891,7 +891,7 @@ def main(bpm):
     TUNING = STANDARD_TUNING  # e.g., (64, 59, 55, 50, 45, 40)
     
     # The original checkpoint path
-    checkpoint_path = "/data/andreaguz/fret_t5/checkpoints_conditioning_scratch_retrain/checkpoint-642982"
+    checkpoint_path = ""
 
     if not os.path.exists(checkpoint_path):
         print(f"\nERROR: Checkpoint not found at {checkpoint_path}")
@@ -900,7 +900,7 @@ def main(bpm):
 
     # Load model and tokenizer
     print("\nLoading model and tokenizer...")
-    tokenizer = MidiTabTokenizerV3.load("/data/andreaguz/fret_t5_clean/fret_t5/universal_tokenizer")
+    tokenizer = MidiTabTokenizerV3.load("")
     tokenizer.ensure_conditioning_tokens(
         capo_values=tuple(range(8)),
         tuning_options=DEFAULT_CONDITIONING_TUNINGS

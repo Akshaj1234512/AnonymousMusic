@@ -92,15 +92,15 @@ def audio_midi_to_chunks(audio_path, midi_list):
     return chunk_filepaths, midi_onsets, midi_durations
 
 def run_peter_model_on_chunks(chunk_paths: List[str], onsets, durations):
-    PYTHON_EXECUTABLE = "/data/samhita/.venv/bin/python"
+    PYTHON_EXECUTABLE = ""
 
-    BASE_DIR="/data/shamakg/music_ai_pipeline/"
-    INPUT_DIR="/data/shamakg/music_ai_pipeline/audio_slices/"
+    BASE_DIR=""
+    INPUT_DIR=""
     
-    MODEL_DIR="/data/shamakg/music_ai_pipeline/expTechInfer_12-14-2025/models_cnn_lstm/setupB-eg_ipt-plus4/run-20251212-231215"
-    MODEL_FILE="/data/shamakg/music_ai_pipeline/expTechInfer_12-14-2025/models_cnn_lstm/setupB-eg_ipt-plus4/run-20251212-231215/cnn_lstm_best.h5"
+    MODEL_DIR=""
+    MODEL_FILE=""
 
-    INFERENCE_FILE = "/data/shamakg/music_ai_pipeline/expTechInfer_12-14-2025/scripts/infer_cnn_lstm.py"
+    INFERENCE_FILE = ""
 
     if 'TF_USE_LEGACY_KERAS' in os.environ:
         del os.environ['TF_USE_LEGACY_KERAS']

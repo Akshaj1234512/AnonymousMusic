@@ -3,11 +3,11 @@ import shutil
 from typing import Optional
 
 
-GOAT_ROOT = Path("/data/shamakg/GOAT")
+GOAT_ROOT = Path("")
 DATA_DIR  = GOAT_ROOT / "data"
 
-OUT_AUDIO = Path("/data/akshaj/MusicAI/GOAT/audio")
-OUT_MIDI  = Path("/data/akshaj/MusicAI/GOAT/midi")
+OUT_AUDIO = Path("")
+OUT_MIDI  = Path("")
 
 AMP_NUMS = {1, 2, 3, 4, 5}
 MIDI_EXTS = {".mid", ".midi"}

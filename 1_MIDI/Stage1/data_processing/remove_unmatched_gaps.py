@@ -1,8 +1,8 @@
 import os
 from pathlib import Path
 
-AUDIO_DIR = Path("/data/akshaj/MusicAI/gaps_v1/audio")
-MIDI_DIR  = Path("/data/akshaj/MusicAI/gaps_v1/midi")
+AUDIO_DIR = Path("")
+MIDI_DIR  = Path("")
 
 AUDIO_EXTS = {".wav"}            # extend if needed
 MIDI_EXTS  = {".mid", ".midi"}   # both common MIDI extensions

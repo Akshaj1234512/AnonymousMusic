@@ -15,8 +15,8 @@ DEVELOPER_TOKEN = 'qtxKUpclyz6siRatBPIIz6mk3p9V5REK'
 SHARED_LINK = "https://rochester.app.box.com/v/SynthTab-Full"
 
 # Local paths
-OUTPUT_DIR = "/data/akshaj/MusicAI/workspace/hdf5s/synthtab/2024"
-TEMP_DIR = "/data/akshaj/MusicAI/temp_cache" 
+OUTPUT_DIR = ""
+TEMP_DIR = ""
 
 SAMPLE_RATE = 16000 
 

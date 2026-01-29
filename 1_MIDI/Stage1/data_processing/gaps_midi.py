@@ -5,8 +5,8 @@ from pathlib import Path
 from music21 import converter
 
 # Hardcoded paths (your GAPS setup)
-XML_DIR = Path("/data/subhashprasad/GAPS_audio/musicxml")
-OUT_MIDI_DIR = Path("/data/akshaj/MusicAI/GAPS_aligned")
+XML_DIR = Path("")
+OUT_MIDI_DIR = Path("")
 
 
 def convert_one_xml(xml_path: Path, out_dir: Path):

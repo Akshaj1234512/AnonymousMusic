@@ -28,8 +28,8 @@ DROP_D_TUNING: Tuple[int, ...] = (64, 59, 55, 50, 45, 38)
 def run_tab_generation(midi_path, capo=0, tuning=STANDARD_TUNING):
     ''' run inference on andrea's model '''
     inference = FretT5Inference(
-        checkpoint_path="/data/shamakg/music_ai_pipeline/Music-AI/5_FinalPipeline/src_backup/fret_t5/best_model.pt",
-        tokenizer_path="/data/shamakg/music_ai_pipeline/Music-AI/5_FinalPipeline/t5_fretting_transformer/universal_tokenizer"
+        checkpoint_path="",
+        tokenizer_path=""
     )
     midi_notes = load_midi_notes(midi_path)
     print("Andrea Capo", capo)

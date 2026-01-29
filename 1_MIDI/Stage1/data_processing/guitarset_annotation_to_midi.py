@@ -244,7 +244,7 @@ class GuitarSetJAMSConverter:
 
 def main():
     """Main execution function"""
-    guitarset_path = "/data/akshaj/MusicAI/GuitarSet"
+    guitarset_path = ""
     if not os.path.exists(guitarset_path):
         print(f"GuitarSet dataset not found at: {guitarset_path}")
         print("Please check the path and try again.")

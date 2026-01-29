@@ -467,7 +467,7 @@ def main(dataset: str = "guitarset"):
 
     # Load dataset files
     if dataset.lower() == "guitarset":
-        guitarset_dir = Path("/data/akshaj/MusicAI/GuitarSet/annotation")
+        guitarset_dir = Path("")
 
         if not guitarset_dir.exists():
             print(f"ERROR: GuitarSet directory not found at {guitarset_dir}")

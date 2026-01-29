@@ -13,4 +13,4 @@ Seminar Slideshow Presentation: https://docs.google.com/presentation/d/1dBwig8hy
 Music AI Team Document: https://docs.google.com/document/d/11EGxikx48PIuqUgDy9gn_XR0xpirLDEiaLma8gGgU7Q/edit?tab=t.eons863jh8b8#heading=h.x4h19xf41lhh
 
 ### Members
-Akshaj, Jiachen, Robbie, Anagha, Sid, Zane, Andrea, Neel
+

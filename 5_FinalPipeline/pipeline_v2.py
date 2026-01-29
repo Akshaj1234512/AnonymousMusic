@@ -19,7 +19,7 @@ from tab_generation_final import main as tab_generator_final
 from BeatNet.BeatNet import BeatNet
 import tab_generation_utils.jams_test as j
 
-# Example usage: python pipeline_v2.py --audio_path /data/shamakg/datasets/FrancoisLeduc_Raw/audio/2DC4c.mp3
+# Example usage: python pipeline_v2.py --audio_path 
 
 #----------------------------------------------------------------------------------#
 
@@ -213,13 +213,13 @@ def audio_midi_to_chunks(audio_path, midi_list):
     return chunk_filepaths, midi_onsets, midi_durations
 
 def run_peter_model_on_chunks(chunk_paths: List[str], onsets, durations):
-    PYTHON_EXECUTABLE = "/data/samhita/.venv/bin/python"
+    PYTHON_EXECUTABLE = ""
 
-    BASE_DIR="/data/shamakg/music_ai_pipeline/"
-    INPUT_DIR="/data/shamakg/music_ai_pipeline/Music-AI/5_FinalPipeline/audio_slices/"
+    BASE_DIR=""
+    INPUT_DIR=""
     
-    MODEL_DIR="/data/shamakg/music_ai_pipeline/expTechInfer_12-14-2025/models_cnn_lstm/final_model/run-20260112-131057"
-    INFERENCE_FILE = "/data/shamakg/music_ai_pipeline/expTechInfer_12-14-2025/scripts/infer_cnn_lstm.py"
+    MODEL_DIR=""
+    INFERENCE_FILE = ""
 
     if 'TF_USE_LEGACY_KERAS' in os.environ:
         del os.environ['TF_USE_LEGACY_KERAS']
@@ -326,8 +326,8 @@ if __name__ == "__main__":
     #----------------------------------------------------------------------------------#
 
     print("Running our pipeline on:", AUDIO_PATH)
-    MUSIC_TO_MIDI_PATH = "/data/akshaj/MusicAI/workspace/checkpoints/log_0332/gaps_goat_guitartechs_leduc_limited_regress_onset_offset_frame_velocity_bce_log332_iter2000_lr1e-05_bs4.pth"
-    MIDI_INFERENCE_SCRIPT = "/data/akshaj/MusicAI/Stage1/pytorch/inference.py"
+    MUSIC_TO_MIDI_PATH = ""
+    MIDI_INFERENCE_SCRIPT = ""
     MIN_AUDIO_SLICE_DURATION = 0.2 # This is set as minimal comprehensible input to Peter's model. if you change thiis you must also change in postprocess.py
     
     #----------------------------------------------------------------------------------#

@@ -8,9 +8,9 @@ import librosa
 from scipy.signal import fftconvolve, butter, filtfilt
 
 # --- Configuration ---
-guitarset_dir = '/data/akshaj/MusicAI/GuitarSet/audio_hex_debleeded'
-ir_dir = '/data/akshaj/MusicAI/EchoThief/noise' 
-output_dir = '/data/akshaj/MusicAI/GuitarSet/acoustic_noisy'
+guitarset_dir = ''
+ir_dir = ''
+output_dir = ''
 TARGET_SR = 16000 
 
 # Noise Level: Lower dB = More Noise
